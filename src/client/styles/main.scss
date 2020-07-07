@@ -131,3 +131,16 @@ body {
         }
     }
 }
+
+@media all and (max-width: 990px) {
+    #my_trips .container .card {
+        width: 20rem;
+        padding: 10px 20px;
+    }
+
+    #my_trips .container .card img {
+        width: 15rem;
+        height: 15rem;
+        margin: 10px auto;
+    }
+}
