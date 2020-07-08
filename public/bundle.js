@@ -155,7 +155,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal {\n  display: none;\n  /* Hidden by default */\n  position: fixed;\n  /* Stay in place */\n  z-index: 3;\n  /* Sit on top */\n  padding-top: 120px;\n  /* Location of the box */\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.516);\n  /* Black w/ opacity */\n  /* Modal Content */\n  /* The Close Button */ }\n  .modal .modal_content {\n    background-color: #fefefe;\n    margin: auto;\n    padding: 12px 20px;\n    border: 1px solid #888;\n    width: 780px;\n    height: 400px; }\n  .modal #modal_close {\n    color: #aaaaaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n    padding: 0;\n    margin: 0; }\n    .modal #modal_close:hover, .modal #modal_close:focus {\n      color: #000;\n      text-decoration: none;\n      cursor: pointer; }\n  .modal #modal_card {\n    display: flex;\n    flex-direction: row; }\n    .modal #modal_card #modal_img {\n      display: inline-block;\n      width: 350px;\n      height: 300px;\n      margin: 10px auto 5px auto; }\n    .modal #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: inline-block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      .modal #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin: 20px auto; }\n      .modal #modal_card #modal_text p {\n        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }\n  .modal #save_trip_btn {\n    width: 350px;\n    padding: 5px;\n    margin: 0%;\n    float: none;\n    color: white;\n    border-radius: 5px;\n    background: #fe3532;\n    border: 1px solid #910907; }\n    .modal #save_trip_btn:hover {\n      background: #8e2626;\n      border-style: inset; }\n\n@media all and (max-width: 830px) {\n  #modal_card {\n    display: block; }\n    #modal_card #modal_img {\n      display: block;\n      width: 150px;\n      height: 200px;\n      margin: 3px auto 3px auto; }\n    #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin-bottom: 20px; } }\n", ""]);
+exports.push([module.i, ".modal {\n  display: none;\n  /* Hidden by default */\n  position: fixed;\n  /* Stay in place */\n  z-index: 3;\n  /* Sit on top */\n  padding-top: 120px;\n  /* Location of the box */\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.516);\n  /* Black w/ opacity */\n  /* Modal Content */\n  /* The Close Button */ }\n  .modal .modal_content {\n    background-color: #fefefe;\n    margin: auto;\n    padding: 12px 20px;\n    border: 1px solid #888;\n    width: 780px;\n    height: 400px; }\n  .modal #modal_close {\n    color: #aaaaaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n    padding: 0;\n    margin: 0; }\n    .modal #modal_close:hover, .modal #modal_close:focus {\n      color: #000;\n      text-decoration: none;\n      cursor: pointer; }\n  .modal #modal_card {\n    display: flex;\n    flex-direction: row; }\n    .modal #modal_card #modal_img {\n      display: inline-block;\n      width: 350px;\n      height: 300px;\n      margin: 10px auto 5px auto; }\n    .modal #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: inline-block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      .modal #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin: 20px auto; }\n      .modal #modal_card #modal_text p {\n        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }\n  .modal #save_trip_btn {\n    position: fixed;\n    top: 450px;\n    width: 349px;\n    padding: 5px;\n    margin: 0%;\n    float: none;\n    color: white;\n    border-radius: 5px;\n    background: #fe3532;\n    border: 1px solid #910907; }\n    .modal #save_trip_btn:hover {\n      background: #8e2626;\n      border-style: inset; }\n\n@media all and (max-width: 830px) {\n  #modal_card {\n    display: block; }\n    #modal_card #modal_img {\n      display: block;\n      width: 150px;\n      height: 200px;\n      margin: 3px auto 3px auto; }\n    #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin-bottom: 20px; } }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -916,11 +916,10 @@ __webpack_require__.r(__webpack_exports__);
 
 async function performSearch() {
     const submitBtn = document.getElementById('search_btn');
-    submitBtn.setAttribute('value', 'Searching...' );
+    submitBtn.setAttribute('value', 'Searching...');
     submitBtn.disabled = true;
 
     Client.handleSubmit(event);
-
 }
 
 function performDelete(target) {
@@ -931,6 +930,47 @@ function performDelete(target) {
         deleteDiv.remove();
     }
 }
+
+async function performSave() {
+    // const saveBtn = document.getElementById('save_trip_btn');
+    // saveBtn.addEventListener('click', function (){
+
+    try {
+        const postData = await fetch('/getLastData', {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: '',
+        });
+
+        const myData = await postData.json();
+        console.log("DATA IN APP for save: " + (myData));
+        Client.updateUI(myData);
+
+        var allModalP = document.getElementsByClassName('modal_p');
+        while (allModalP[0]) {
+            allModalP[0].parentNode.removeChild(allModalP[0]);
+        }
+
+    } catch (error) {
+        console.log("HELLOOOOO THIS IS AN ERROR in infoChecker");
+        console.log(error);
+    }
+
+}
+
+function performClose() {
+    const modal = document.getElementById('myModal');
+    modal.style.display = "none";
+
+    var allModalP = document.getElementsByClassName('modal_p');
+    while (allModalP[0]) {
+        allModalP[0].parentNode.removeChild(allModalP[0]);
+    }
+}
+
 
 function performActiveNavItem(target) {
     // console.log("IN ACTIVE NAV ITEM");
@@ -947,17 +987,19 @@ function performActiveNavItem(target) {
 document.addEventListener('click', function (e) {
     if (e.target.className === 'delete_trip_btn') {
         performDelete(e.target);
-    }
-    if (e.target.className === 'nav-item' || e.target.className === 'nav-link') {
+    } else if (e.target.className === 'nav-item' || e.target.className === 'nav-link') {
         if (e.target.className === 'nav-link') {
             performActiveNavItem(e.target.parentElement);
         }
         else {
             performActiveNavItem(e.target);
         }
-    }
-    else if (e.target.id === 'search_btn') {
+    } else if (e.target.id === 'search_btn') {
         performSearch();
+    } else if (e.target.id === 'save_trip_btn') {
+        performSave();
+    } else if (e.target.id === 'modal_close') {
+        performClose();
     }
 })
 
@@ -968,16 +1010,16 @@ window.addEventListener('scroll', function () {
     let position = window.pageYOffset;
 
     const allLinks = document.querySelectorAll('.nav-link');
-    console.log("allLinks: " + allLinks.length);
+    // console.log("allLinks: " + allLinks.length);
 
 
     allLinks.forEach((link) => {
         var sectionId = link.hash;
         sectionId = sectionId.substring(1);
-        console.log("sectionId: " + sectionId);
+        // console.log("sectionId: " + sectionId);
 
         const sections = document.getElementById(sectionId);
-        console.log("sctionss: "+ JSON.stringify(sections));
+        // console.log("sctionss: "+ JSON.stringify(sections));
 
 
         // did not reach to any yet
@@ -989,7 +1031,7 @@ window.addEventListener('scroll', function () {
         if (sections.offsetTop <= position + 100) {
             performActiveNavItem(sections);
         }
-    
+
     });
 });
 
@@ -1104,6 +1146,7 @@ async function checkForInfo(data) {
         });
 
         const newData = await postData.json();
+         console.log("DATA IN CHECKER: " + (newData));
         Client.openModal(newData);
 
     } catch (error) {
@@ -1134,12 +1177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 async function openModal(data) {
     console.log("adfaGS");
-
-    const xBtn = document.getElementById('modal_close');
-    xBtn.addEventListener('click', function (){
-        const modal = document.getElementById('myModal');
-        modal.style.display = "none";
-    });
+    console.log(data);
 
     const modal = document.getElementById('myModal');
     modal.style.display = "block";
@@ -1182,17 +1220,6 @@ async function openModal(data) {
     const submitBtn = document.getElementById('search_btn');
     submitBtn.setAttribute('value', 'Search');
     submitBtn.disabled = false;
-
-    const saveBtn = document.getElementById('save_trip_btn');
-    saveBtn.addEventListener('click', function (){
-        Client.updateUI(data);
-        modalTitle.innerHTML = '';
-        modalP0.remove();
-        modalP1.remove();
-        modalP2.remove();
-        modalP3.remove();
-        modalImg.setAttribute('src', '');
-    });
 }
 
  
@@ -1210,6 +1237,8 @@ async function openModal(data) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return updateUI; });
 async function updateUI(data) {
+    console.log("data in update UI: " + JSON.stringify(data));
+
     const modal = document.getElementById('myModal');
     modal.style.display = "none";
 

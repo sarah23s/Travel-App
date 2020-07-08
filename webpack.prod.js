@@ -1,60 +1,64 @@
+var HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require("path")
 const webpack = require("webpack")
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+
 const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = {
-    mode: 'development',
-    devtool: 'source-map',
+    mode: 'production',
     entry: './src/client/app.js',
-    stats: 'verbose',
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public/'),
         libraryTarget: 'var',
         library: 'Client'
     },
     module: {
         rules: [
             {
+                test: /\.scss$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+            },
+
+            {
                 test: '/\.js$/',
                 exclude: /node_modules/,
                 loader: "babel-loader"
             },
+
             {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
+                test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
+                    'file-loader',
                     {
-                        loader: 'file-loader',
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true, // webpack@1.x
+                            disable: true, // webpack@2.x and newer
+                        },
                     },
                 ],
             },
-        ]
+        ],
+
+
     },
 
     plugins: [
         new HtmlWebPackPlugin({
-            // path: path.resolve(__dirname, './dist'),
-            // publicPath: '/dist/',
             template: "./src/client/views/index.html",
             filename: "./index.html",
         }),
-        new CleanWebpackPlugin({
-            // Simulate the removal of files
-            dry: true,
-            // Write Logs to Console
-            verbose: true,
-            // Automatically remove all unused webpack assets on rebuild
-            cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-        }),
-        new WorkboxPlugin.GenerateSW(),
-        
-    ]
+
+        new MiniCssExtractPlugin({ filename: "[name].css" }),
+
+        new WorkboxPlugin.GenerateSW()
+    ],
+
+    optimization: {
+        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+    },
 }
