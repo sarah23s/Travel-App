@@ -30,10 +30,9 @@ function handleSubmit(event) {
 }
 
 async function sentiment_analysis_TEST(input_text) {
-    var response = await fetch("http://localhost:3051/sentiment_text");
+    var response = await fetch("http://localhost:2304/sentiment_text");
     console.log("response: ", response);
 }
-
 
 export {
     handleSubmit,

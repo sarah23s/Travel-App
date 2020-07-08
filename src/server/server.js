@@ -139,3 +139,8 @@ async function getPhoto() {
             console.log("ERROR in getPhoto!!: " + error);
         })
 }
+
+//test
+app.get('/sentiment_text', async function (req, res) {
+    res.send({});
+});

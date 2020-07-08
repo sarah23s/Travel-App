@@ -1,5 +1,6 @@
 import { checkForInfo } from './js/infoChecker'
 import { handleSubmit } from './js/formHandler'
+import { sentiment_analysis_TEST } from './js/formHandler'
 import { openModal } from './js/openModal'
 import { updateUI } from './js/updateUI'
 
@@ -139,6 +140,7 @@ window.addEventListener('scroll', function () {
 
 export {
     handleSubmit,
+    sentiment_analysis_TEST,
     checkForInfo,
     openModal,
     updateUI
