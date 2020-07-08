@@ -5,12 +5,7 @@
 
 async function openModal(data) {
     console.log("adfaGS");
-
-    const xBtn = document.getElementById('modal_close');
-    xBtn.addEventListener('click', function (){
-        const modal = document.getElementById('myModal');
-        modal.style.display = "none";
-    });
+    console.log(data);
 
     const modal = document.getElementById('myModal');
     modal.style.display = "block";
@@ -53,11 +48,6 @@ async function openModal(data) {
     const submitBtn = document.getElementById('search_btn');
     submitBtn.setAttribute('value', 'Search');
     submitBtn.disabled = false;
-
-    const saveBtn = document.getElementById('save_trip_btn');
-    saveBtn.addEventListener('click', function (){
-        Client.updateUI(data);
-    });
 }
 
 export { openModal } 

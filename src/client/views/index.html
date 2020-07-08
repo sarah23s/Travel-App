@@ -94,8 +94,7 @@
             <div id="all_trip_cards" class="container">
                 <div class="row">
 
-                        <div class="afterRow col-lg col-md-12 col-lg-6"><div class="card"><img src="https://pixabay.com/get/55e2d7404952ae14f1dc84609629307d1236dde0524c704c7c2b79d6954dc751_640.jpg" alt="City photo"><h3><stong>Trip to : </stong>Cairo</h3><p class="card-text">Your trip to <strong><em> Cairo, Egypt</em></strong> is 16 days away</p><p class="card-text"><strong>Departure Date: </strong>2020-08-09</p><p class="card-text"><strong>Low Temp: </strong>25.4 °C</p><p class="card-text"><strong>High Temp: </strong>40.3 °C</p><p class="card-text"><strong>Weather Description: </strong>Clear Sky</p><button class="delete_trip_btn">Delete Trip</button></div></div>
-
+                    </div>
                 </div>
             </div>
 
@@ -120,6 +119,16 @@
             <h3 id="copyright">© Copyright 2020 Sarah Abdelfattah</h3>
         </footer>
 
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     </body>
 
 </html>

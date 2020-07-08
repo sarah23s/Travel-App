@@ -137,7 +137,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../images/planner.jp
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "body {\n  padding: 0;\n  margin: 0; }\n\n#home {\n  background-image: linear-gradient(180deg, rgba(14, 14, 65, 0.749) 0%, rgba(219, 219, 219, 0.31) 70%), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: cover;\n  background-position: 50%;\n  background-attachment: fixed;\n  opacity: 0.8;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: #fff; }\n\n#reserve_div {\n  margin-top: 9rem;\n  font-family: cursive;\n  font-size: 50px;\n  font-weight: bold;\n  text-align: center; }\n  #reserve_div form {\n    width: 100%;\n    padding: 1rem;\n    margin: 1.5rem auto;\n    background: rgba(196, 223, 255, 0.603);\n    border-radius: 15px;\n    font-family: 'Kalam', cursive;\n    font-weight: normal;\n    font-size: 28px; }\n    #reserve_div form label {\n      display: block;\n      color: black;\n      margin: 10px 20px 0 10px; }\n    #reserve_div form input {\n      display: block;\n      width: 300px;\n      margin: 0 auto 20px auto;\n      height: 30px;\n      border-radius: 5px;\n      border: 1px solid #153B67;\n      padding: 2px 10px;\n      font-size: 18px; }\n    #reserve_div form #trip_date {\n      color: #929292;\n      border: none; }\n    #reserve_div form #search_btn {\n      color: white;\n      background: #091b2e; }\n\n#my_trips {\n  min-height: 550px;\n  background: rgba(247, 247, 247, 0.55); }\n  #my_trips h1 {\n    padding: 2rem;\n    font-family: cursive;\n    font-size: 40px;\n    font-weight: bold;\n    text-align: center; }\n  #my_trips .container {\n    margin: auto; }\n    #my_trips .container .card {\n      width: 25rem;\n      padding: 20px 30px;\n      margin: 0 auto 50px auto;\n      float: none;\n      border-radius: 10px;\n      z-index: 0; }\n      #my_trips .container .card:hover {\n        transform: scale(1.05);\n        box-shadow: 0 8px 16px 0 rgba(9, 27, 46, 0.5); }\n      #my_trips .container .card img {\n        width: 20rem;\n        height: 15rem;\n        margin: 15px auto; }\n      #my_trips .container .card h3 {\n        text-align: center;\n        font-family: sans-serif; }\n      #my_trips .container .card .card-text {\n        font-size: 18px; }\n      #my_trips .container .card button {\n        width: 60%;\n        margin: auto;\n        padding: 5px;\n        color: white;\n        background: #ff6663;\n        border-radius: 5px;\n        border: 1px solid #fa0602;\n        border-style: outset; }\n        #my_trips .container .card button:hover {\n          background: #b53431;\n          border-style: inset; }\n\n@media all and (max-width: 990px) {\n  #my_trips .container .card {\n    width: 20rem;\n    padding: 10px 20px; }\n  #my_trips .container .card img {\n    width: 15rem;\n    height: 15rem;\n    margin: 10px auto; } }\n", ""]);
+exports.push([module.i, "body {\n  padding: 0;\n  margin: 0; }\n\n#home {\n  background-image: linear-gradient(180deg, rgba(14, 14, 65, 0.749) 0%, rgba(219, 219, 219, 0.31) 70%), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-size: cover;\n  background-position: 50%;\n  background-attachment: fixed;\n  opacity: 0.8;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  color: #fff; }\n\n#reserve_div {\n  margin-top: 9rem;\n  font-family: cursive;\n  font-size: 50px;\n  font-weight: bold;\n  text-align: center; }\n  #reserve_div form {\n    width: 100%;\n    padding: 1rem;\n    margin: 1.5rem auto;\n    background: rgba(196, 223, 255, 0.603);\n    border-radius: 15px;\n    font-family: 'Kalam', cursive;\n    font-weight: normal;\n    font-size: 28px; }\n    #reserve_div form label {\n      display: block;\n      color: black;\n      margin: 10px 20px 0 10px; }\n    #reserve_div form input {\n      display: block;\n      width: 300px;\n      margin: 0 auto 20px auto;\n      height: 30px;\n      border-radius: 5px;\n      border: 1px solid #153B67;\n      padding: 2px 10px;\n      font-size: 18px; }\n    #reserve_div form #trip_date {\n      color: #929292;\n      border: none; }\n    #reserve_div form #search_btn {\n      color: white;\n      background: #091b2e; }\n\n#my_trips {\n  min-height: 700px;\n  background: rgba(247, 247, 247, 0.55); }\n  #my_trips h1 {\n    padding: 2rem;\n    font-family: cursive;\n    font-size: 40px;\n    font-weight: bold;\n    text-align: center; }\n  #my_trips .container {\n    margin: auto; }\n    #my_trips .container .afterRow .card {\n      width: 25rem;\n      padding: 20px 30px;\n      margin: 0 auto 50px auto;\n      float: none;\n      border-radius: 10px;\n      z-index: 0; }\n      #my_trips .container .afterRow .card:hover {\n        transform: scale(1.05);\n        box-shadow: 0 8px 16px 0 rgba(9, 27, 46, 0.5); }\n      #my_trips .container .afterRow .card img {\n        width: 20rem;\n        height: 15rem;\n        margin: 15px auto;\n        border: 1px solid gray;\n        border-radius: 5px; }\n      #my_trips .container .afterRow .card h3 {\n        text-align: center;\n        font-family: cursive; }\n      #my_trips .container .afterRow .card .card-text {\n        font-size: 18px;\n        margin: 5px; }\n      #my_trips .container .afterRow .card button {\n        width: 60%;\n        margin: 10px auto 0px auto;\n        padding: 5px;\n        color: white;\n        background: #ff6663;\n        border-radius: 5px;\n        border: 1px solid #fa0602;\n        border-style: outset; }\n        #my_trips .container .afterRow .card button:hover {\n          background: #b53431;\n          border-style: inset; }\n\n@media all and (max-width: 990px) {\n  #my_trips .container .card {\n    width: 20rem;\n    padding: 10px 20px; }\n  #my_trips .container .card img {\n    width: 15rem;\n    height: 15rem;\n    margin: 10px auto; } }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -155,7 +155,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".modal {\n  display: block;\n  /* Hidden by default */\n  position: fixed;\n  /* Stay in place */\n  z-index: 3;\n  /* Sit on top */\n  padding-top: 120px;\n  /* Location of the box */\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.516);\n  /* Black w/ opacity */\n  /* Modal Content */\n  /* The Close Button */ }\n  .modal .modal_content {\n    background-color: #fefefe;\n    margin: auto;\n    padding: 12px 20px;\n    border: 1px solid #888;\n    width: 780px;\n    height: 400px; }\n  .modal .modal_close {\n    color: #aaaaaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n    padding: 0;\n    margin: 0; }\n    .modal .modal_close:hover, .modal .modal_close:focus {\n      color: #000;\n      text-decoration: none;\n      cursor: pointer; }\n  .modal .modal_card {\n    display: flex;\n    flex-direction: row; }\n    .modal .modal_card .modal_img {\n      display: inline-block;\n      width: 350px;\n      height: 300px;\n      margin: 10px auto 10px auto; }\n    .modal .modal_card .modal_text {\n      width: 380px;\n      color: black;\n      display: inline-block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      .modal .modal_card .modal_text .modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin-bottom: 20px; }\n  .modal .save_trip_btn {\n    width: 350px;\n    padding: 5px;\n    float: none;\n    color: white;\n    border-radius: 5px;\n    background: #fe3532;\n    border: 1px solid #910907; }\n    .modal .save_trip_btn:hover {\n      background: #8e2626;\n      border-style: inset; }\n\n@media all and (max-width: 830px) {\n  .modal_card {\n    display: block; }\n    .modal_card .modal_img {\n      display: block;\n      width: 150px;\n      height: 200px;\n      margin: 10px auto 10px auto; }\n    .modal_card .modal_text {\n      width: 380px;\n      color: black;\n      display: block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      .modal_card .modal_text .modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin-bottom: 20px; } }\n", ""]);
+exports.push([module.i, ".modal {\n  display: none;\n  /* Hidden by default */\n  position: fixed;\n  /* Stay in place */\n  z-index: 3;\n  /* Sit on top */\n  padding-top: 120px;\n  /* Location of the box */\n  width: 100%;\n  /* Full width */\n  height: 100%;\n  /* Full height */\n  overflow: auto;\n  /* Enable scroll if needed */\n  background-color: black;\n  /* Fallback color */\n  background-color: rgba(0, 0, 0, 0.516);\n  /* Black w/ opacity */\n  /* Modal Content */\n  /* The Close Button */ }\n  .modal .modal_content {\n    background-color: #fefefe;\n    margin: auto;\n    padding: 12px 20px;\n    border: 1px solid #888;\n    width: 780px;\n    height: 400px; }\n  .modal #modal_close {\n    color: #aaaaaa;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n    padding: 0;\n    margin: 0; }\n    .modal #modal_close:hover, .modal #modal_close:focus {\n      color: #000;\n      text-decoration: none;\n      cursor: pointer; }\n  .modal #modal_card {\n    display: flex;\n    flex-direction: row; }\n    .modal #modal_card #modal_img {\n      display: inline-block;\n      width: 350px;\n      height: 300px;\n      margin: 10px auto 5px auto; }\n    .modal #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: inline-block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      .modal #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin: 20px auto; }\n      .modal #modal_card #modal_text p {\n        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }\n  .modal #save_trip_btn {\n    width: 350px;\n    padding: 5px;\n    margin: 0%;\n    float: none;\n    color: white;\n    border-radius: 5px;\n    background: #fe3532;\n    border: 1px solid #910907; }\n    .modal #save_trip_btn:hover {\n      background: #8e2626;\n      border-style: inset; }\n\n@media all and (max-width: 830px) {\n  #modal_card {\n    display: block; }\n    #modal_card #modal_img {\n      display: block;\n      width: 150px;\n      height: 200px;\n      margin: 3px auto 3px auto; }\n    #modal_card #modal_text {\n      width: 380px;\n      color: black;\n      display: block;\n      margin: auto;\n      font-family: 'Fondamento', cursive;\n      font-size: 18px;\n      padding: 0 10px 20px 20px; }\n      #modal_card #modal_text #modal_title {\n        display: block;\n        font-family: cursive;\n        font-weight: bold;\n        margin-bottom: 20px; } }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -343,6 +343,215 @@ exports.default = global.fetch.bind(global);
 exports.Headers = global.Headers;
 exports.Request = global.Request;
 exports.Response = global.Response;
+
+/***/ }),
+
+/***/ "./node_modules/querystring-es3/decode.js":
+/*!************************************************!*\
+  !*** ./node_modules/querystring-es3/decode.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+// If obj.hasOwnProperty has been overridden, then calling
+// obj.hasOwnProperty(prop) will break.
+// See: https://github.com/joyent/node/issues/1707
+function hasOwnProperty(obj, prop) {
+  return Object.prototype.hasOwnProperty.call(obj, prop);
+}
+
+module.exports = function(qs, sep, eq, options) {
+  sep = sep || '&';
+  eq = eq || '=';
+  var obj = {};
+
+  if (typeof qs !== 'string' || qs.length === 0) {
+    return obj;
+  }
+
+  var regexp = /\+/g;
+  qs = qs.split(sep);
+
+  var maxKeys = 1000;
+  if (options && typeof options.maxKeys === 'number') {
+    maxKeys = options.maxKeys;
+  }
+
+  var len = qs.length;
+  // maxKeys <= 0 means that we should not limit keys count
+  if (maxKeys > 0 && len > maxKeys) {
+    len = maxKeys;
+  }
+
+  for (var i = 0; i < len; ++i) {
+    var x = qs[i].replace(regexp, '%20'),
+        idx = x.indexOf(eq),
+        kstr, vstr, k, v;
+
+    if (idx >= 0) {
+      kstr = x.substr(0, idx);
+      vstr = x.substr(idx + 1);
+    } else {
+      kstr = x;
+      vstr = '';
+    }
+
+    k = decodeURIComponent(kstr);
+    v = decodeURIComponent(vstr);
+
+    if (!hasOwnProperty(obj, k)) {
+      obj[k] = v;
+    } else if (isArray(obj[k])) {
+      obj[k].push(v);
+    } else {
+      obj[k] = [obj[k], v];
+    }
+  }
+
+  return obj;
+};
+
+var isArray = Array.isArray || function (xs) {
+  return Object.prototype.toString.call(xs) === '[object Array]';
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/querystring-es3/encode.js":
+/*!************************************************!*\
+  !*** ./node_modules/querystring-es3/encode.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+var stringifyPrimitive = function(v) {
+  switch (typeof v) {
+    case 'string':
+      return v;
+
+    case 'boolean':
+      return v ? 'true' : 'false';
+
+    case 'number':
+      return isFinite(v) ? v : '';
+
+    default:
+      return '';
+  }
+};
+
+module.exports = function(obj, sep, eq, name) {
+  sep = sep || '&';
+  eq = eq || '=';
+  if (obj === null) {
+    obj = undefined;
+  }
+
+  if (typeof obj === 'object') {
+    return map(objectKeys(obj), function(k) {
+      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
+      if (isArray(obj[k])) {
+        return map(obj[k], function(v) {
+          return ks + encodeURIComponent(stringifyPrimitive(v));
+        }).join(sep);
+      } else {
+        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
+      }
+    }).join(sep);
+
+  }
+
+  if (!name) return '';
+  return encodeURIComponent(stringifyPrimitive(name)) + eq +
+         encodeURIComponent(stringifyPrimitive(obj));
+};
+
+var isArray = Array.isArray || function (xs) {
+  return Object.prototype.toString.call(xs) === '[object Array]';
+};
+
+function map (xs, f) {
+  if (xs.map) return xs.map(f);
+  var res = [];
+  for (var i = 0; i < xs.length; i++) {
+    res.push(f(xs[i], i));
+  }
+  return res;
+}
+
+var objectKeys = Object.keys || function (obj) {
+  var res = [];
+  for (var key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) res.push(key);
+  }
+  return res;
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/querystring-es3/index.js":
+/*!***********************************************!*\
+  !*** ./node_modules/querystring-es3/index.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+exports.decode = exports.parse = __webpack_require__(/*! ./decode */ "./node_modules/querystring-es3/decode.js");
+exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node_modules/querystring-es3/encode.js");
+
 
 /***/ }),
 
@@ -661,7 +870,7 @@ module.exports = g;
 /*!***************************!*\
   !*** ./src/client/app.js ***!
   \***************************/
-/*! exports provided: handleSubmit, checkForInfo, updateUI */
+/*! exports provided: handleSubmit, checkForInfo, openModal, updateUI */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -672,22 +881,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_formHandler__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/formHandler */ "./src/client/js/formHandler.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "handleSubmit", function() { return _js_formHandler__WEBPACK_IMPORTED_MODULE_1__["handleSubmit"]; });
 
-/* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_2__["updateUI"]; });
+/* harmony import */ var _js_openModal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/openModal */ "./src/client/js/openModal.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "openModal", function() { return _js_openModal__WEBPACK_IMPORTED_MODULE_2__["openModal"]; });
 
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./styles/main.scss */ "./src/client/styles/main.scss");
-/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/footer.scss */ "./src/client/styles/footer.scss");
-/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_footer_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/header.scss */ "./src/client/styles/header.scss");
-/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_header_scss__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _styles_modal_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/modal.scss */ "./src/client/styles/modal.scss");
-/* harmony import */ var _styles_modal_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_modal_scss__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _images_planner_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/planner.jpg */ "./src/client/images/planner.jpg");
-/* harmony import */ var _images_clouds_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/clouds.jpeg */ "./src/client/images/clouds.jpeg");
+/* harmony import */ var _js_updateUI__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/updateUI */ "./src/client/js/updateUI.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return _js_updateUI__WEBPACK_IMPORTED_MODULE_3__["updateUI"]; });
 
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/main.scss */ "./src/client/styles/main.scss");
+/* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_main_scss__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/footer.scss */ "./src/client/styles/footer.scss");
+/* harmony import */ var _styles_footer_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_footer_scss__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./styles/header.scss */ "./src/client/styles/header.scss");
+/* harmony import */ var _styles_header_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_header_scss__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _styles_modal_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./styles/modal.scss */ "./src/client/styles/modal.scss");
+/* harmony import */ var _styles_modal_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_styles_modal_scss__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _images_planner_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/planner.jpg */ "./src/client/images/planner.jpg");
+/* harmony import */ var _images_clouds_jpeg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/clouds.jpeg */ "./src/client/images/clouds.jpeg");
+/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! querystring */ "./node_modules/querystring-es3/index.js");
+/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(querystring__WEBPACK_IMPORTED_MODULE_10__);
 
-// import { openModal } from './js/openModal'
 
 
 
@@ -703,10 +915,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 async function performSearch() {
-    // console.log("IN SEARCHHHH");
     const submitBtn = document.getElementById('search_btn');
-
-    submitBtn.textContent = 'Searching...';
+    submitBtn.setAttribute('value', 'Searching...' );
     submitBtn.disabled = true;
 
     Client.handleSubmit(event);
@@ -733,12 +943,6 @@ function performActiveNavItem(target) {
     target.classList.add('active_nav');
 }
 
-function performSave() {
-    console.log("IN SAVEEEE");
-}
-
-
-
 
 document.addEventListener('click', function (e) {
     if (e.target.className === 'delete_trip_btn') {
@@ -755,10 +959,40 @@ document.addEventListener('click', function (e) {
     else if (e.target.id === 'search_btn') {
         performSearch();
     }
-    else if (e.target.id === 'save_btn') {
-        performSave();
-    }
 })
+
+
+//need to be edited
+window.addEventListener('scroll', function () {
+    // let fromTop = window.scrollY;
+    let position = window.pageYOffset;
+
+    const allLinks = document.querySelectorAll('.nav-link');
+    console.log("allLinks: " + allLinks.length);
+
+
+    allLinks.forEach((link) => {
+        var sectionId = link.hash;
+        sectionId = sectionId.substring(1);
+        console.log("sectionId: " + sectionId);
+
+        const sections = document.getElementById(sectionId);
+        console.log("sctionss: "+ JSON.stringify(sections));
+
+
+        // did not reach to any yet
+        if (!sections) {
+            return;
+        }
+
+        // Add active class
+        if (sections.offsetTop <= position + 100) {
+            performActiveNavItem(sections);
+        }
+    
+    });
+});
+
 
 
 
@@ -856,6 +1090,8 @@ async function sentiment_analysis_TEST(input_text) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkForInfo", function() { return checkForInfo; });
+let UIdata = {};
+
 async function checkForInfo(data) {
     try {
         const postData = await fetch('/userInput', {
@@ -864,23 +1100,102 @@ async function checkForInfo(data) {
             headers: {
                 'Content-Type': 'application/json',
             },
-            // Body data type must match "Content-Type" header 
             body: JSON.stringify(data),
         });
 
         const newData = await postData.json();
-        console.log("from info checker: " +newData);
-        // Client.openModule();
-        // Client.updateUI(newData);
+        Client.openModal(newData);
 
     } catch (error) {
-        console.log("HELLOOOOO THIS IS AN ERROR");
+        console.log("HELLOOOOO THIS IS AN ERROR in infoChecker");
         console.log(error);
     }
 }
 
  
 
+
+/***/ }),
+
+/***/ "./src/client/js/openModal.js":
+/*!************************************!*\
+  !*** ./src/client/js/openModal.js ***!
+  \************************************/
+/*! exports provided: openModal */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openModal", function() { return openModal; });
+// function closeModal(){
+//     const modal = document.getElementById('myModal');
+//     modal.style.display = "none";
+// }
+
+async function openModal(data) {
+    console.log("adfaGS");
+
+    const xBtn = document.getElementById('modal_close');
+    xBtn.addEventListener('click', function (){
+        const modal = document.getElementById('myModal');
+        modal.style.display = "none";
+    });
+
+    const modal = document.getElementById('myModal');
+    modal.style.display = "block";
+
+    const modalImg = document.getElementById('modal_img')
+    modalImg.setAttribute('src', data.imageUrl);
+
+    const modalTitle = document.getElementById('modal_title');
+    modalTitle.innerHTML = '<stong>Trip to : </stong>' + data.city;
+
+
+    const modalText = document.getElementById('modal_text');
+
+    const modalP0 = document.createElement('p');
+    modalP0.setAttribute('class', 'modal_p');
+    modalP0.innerHTML = 'Your trip to <strong><em> ' + data.city + ', ' + data.country + '</em></strong> is ' + data.diff + ' days away';
+
+    const modalP1 = document.createElement('p');
+    modalP1.setAttribute('class', 'modal_p');
+    modalP1.innerHTML = '<strong>Departure Date: </strong>' + data.date;
+
+    const modalP2 = document.createElement('p');
+    modalP2.setAttribute('class', 'modal_p');
+    modalP2.innerHTML = '<strong>Low Temp: </strong>' + data.lowTemp + ' °C';
+
+    const modalP3 = document.createElement('p');
+    modalP3.setAttribute('class', 'modal_p');
+    modalP3.innerHTML = '<strong>High Temp: </strong>' + data.maxTemp + ' °C';
+
+    const modalP4 = document.createElement('p');
+    modalP4.setAttribute('class', 'modal_p');
+    modalP4.innerHTML = '<strong>Weather Description: </strong>' + data.weatherDescription;
+
+    modalText.appendChild(modalP0);
+    modalText.appendChild(modalP1);
+    modalText.appendChild(modalP2);
+    modalText.appendChild(modalP3);
+    modalText.appendChild(modalP4);
+
+    const submitBtn = document.getElementById('search_btn');
+    submitBtn.setAttribute('value', 'Search');
+    submitBtn.disabled = false;
+
+    const saveBtn = document.getElementById('save_trip_btn');
+    saveBtn.addEventListener('click', function (){
+        Client.updateUI(data);
+        modalTitle.innerHTML = '';
+        modalP0.remove();
+        modalP1.remove();
+        modalP2.remove();
+        modalP3.remove();
+        modalImg.setAttribute('src', '');
+    });
+}
+
+ 
 
 /***/ }),
 
@@ -894,20 +1209,64 @@ async function checkForInfo(data) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUI", function() { return updateUI; });
-function updateUI(data) {
-    const submitBtn = document.getElementById('search_btn');
+async function updateUI(data) {
+    const modal = document.getElementById('myModal');
+    modal.style.display = "none";
 
-    submitBtn.textContent = 'Search';
-    submitBtn.disabled = false;
+    const rowDiv = document.getElementsByClassName('row')[0];
 
-    // document.getElementById('title').innerHTML = '<strong>Title: </strong> Udacity Home Page';
-    // document.getElementById('author').innerHTML = '<strong>Author: </strong> Udacity';
+    const div = document.createElement('div');
+    div.classList.add('afterRow', 'col-lg', 'col-md-12', 'col-lg-6');
 
-    // document.getElementById('polarity').innerHTML = '<strong>Polarity: </strong>' + data.polarity;
-    // document.getElementById('polarity_confidence').innerHTML = '<strong>Polarity Confidence: </strong>' + data.polarity_confidence;
-    // document.getElementById('subjectivity').innerHTML = '<strong>Subjectivity: </strong>' + data.subjectivity;
-    // document.getElementById('subjectivity_confidence').innerHTML = '<strong>Subjectivity Confidence: </strong>' + data.subjectivity_confidence;
+    const cardDiv = document.createElement('div');
+    cardDiv.classList.add('card');
+
+    const img = document.createElement('img');
+    img.setAttribute('src', data.imageUrl);
+    img.setAttribute('alt', "City photo");
+
+    const cardTitle = document.createElement('h3');
+    cardTitle.innerHTML = '<stong>Trip to: </stong>' + data.city;
+
+    const modalP0 = document.createElement('p');
+    modalP0.setAttribute('class', 'card-text');
+    modalP0.innerHTML = 'Your trip to <strong><em> ' + data.city + ', ' + data.country + '</em></strong> is ' + data.diff + ' days away';
+
+    const modalP1 = document.createElement('p');
+    modalP1.setAttribute('class', 'card-text');
+    modalP1.innerHTML = '<strong>Departure Date: </strong>' + data.date;
+
+    const modalP2 = document.createElement('p');
+    modalP2.setAttribute('class', 'card-text');
+    modalP2.innerHTML = '<strong>Low Temp: </strong>' + data.lowTemp + ' °C';
+
+    const modalP3 = document.createElement('p');
+    modalP3.setAttribute('class', 'card-text');
+    modalP3.innerHTML = '<strong>High Temp: </strong>' + data.maxTemp + ' °C';
+
+    const modalP4 = document.createElement('p');
+    modalP4.setAttribute('class', 'card-text');
+    modalP4.innerHTML = '<strong>Weather Description: </strong>' + data.weatherDescription;
+
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.setAttribute('class', 'delete_trip_btn');
+    deleteBtn.innerText = 'Delete Trip';
+
+    cardDiv.appendChild(img);
+    cardDiv.appendChild(cardTitle);
+    cardDiv.appendChild(modalP0);
+    cardDiv.appendChild(modalP1);
+    cardDiv.appendChild(modalP2);
+    cardDiv.appendChild(modalP3);
+    cardDiv.appendChild(modalP4);
+    cardDiv.appendChild(deleteBtn);
+
+    div.appendChild(cardDiv);
+    rowDiv.appendChild(div);
+
 }
+
 
 
 

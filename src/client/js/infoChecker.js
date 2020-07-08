@@ -12,6 +12,7 @@ async function checkForInfo(data) {
         });
 
         const newData = await postData.json();
+         console.log("DATA IN CHECKER: " + (newData));
         Client.openModal(newData);
 
     } catch (error) {

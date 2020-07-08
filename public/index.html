@@ -9,7 +9,8 @@
 
         <!-- fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+            rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
 
         <!-- Font Awesome - icons -->
@@ -66,27 +67,25 @@
                 </form>
             </div>
 
-             <!-- The Modal -->
-            <!-- <div id="myModal" class="modal">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
 
-                Modal content 
                 <div class="modal_content">
-                    <span class="modal_close">&times;</span>
+                    <span id="modal_close">&times;</span>
 
-                    <div class="modal_card">
-                        <img class="modal_img" src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
-                        <div class="modal_text">
-                        <h3 class="modal_title"> Agni</h3>
-                        <p class="modal_p">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                    <div id="modal_card">
+                        <img id="modal_img" src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
+                        <div id="modal_text">
+                            <h3 id="modal_title"> Agni</h3>
+                            <hr>
+                        </div>
+
                     </div>
+                    <button id="save_trip_btn"> Save Trip</button>
 
-                    </div>
-                    <button class="save_trip_btn"> Save Trip</button>
+                </div>
 
-                </div> -->
-
-            </div> 
+            </div>
 
         </section>
 
@@ -94,26 +93,7 @@
             <h1>My trips</h1>
             <div id="all_trip_cards" class="container">
                 <div class="row">
-                    
-                    <div class="col-lg col-md-12 col-lg-6 ">
-                            <div class="card">
-                            <img src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
-                            <h3> Agni</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="delete_trip_btn"> Delete Trip</button>
-                        </div>
-                    </div>
 
-
-                    <div class="col-lg col-md-12 col-lg-6 ">
-                        <div class="card">
-                            <img src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
-                            <h3> BOOM</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="delete_trip_btn"> Delete Trip</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -139,6 +119,16 @@
             <h3 id="copyright">© Copyright 2020 Sarah Abdelfattah</h3>
         </footer>
 
+
+        <script>
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script>
     <script type="text/javascript" src="bundle.js"></script></body>
 
 </html>

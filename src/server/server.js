@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');  // 4- Dependencies, to parse data
 const cors = require('cors');               // 5- Cors for cross origin allowance
 const axios = require('axios');             // 6- To make request to geonames API
 
+let allData =[];
 let trip = {};
 
 // 2- Start up an instance of app
@@ -26,7 +27,7 @@ app.use(express.static('dist')); //pointing the app to the folder
 
 
 // 7- Setup Server
-const port = 3030;
+const port = 2304;
 const server = app.listen(port, listening);
 
 function listening() {
@@ -40,17 +41,25 @@ app.get('/', function (request, res) {
 });
 
 /* POST METHOD */
-app.post('/requestData', async (request, response) => {
-    response.send(JSON.stringify(trip));
+app.post('/getLastData', async (request, response) => {
+    response.send(JSON.stringify(allData[allData.length-1]));
 });
 
 app.post('/userInput', async (request, response) => {
+    // trip = {};
     trip.city = request.body.city;
     trip.date = request.body.departDate;
     trip.timeZoneOffset = request.body.timeZoneOffset;
 
     const temp = await getDataFromGeoNames(request.body.city);
-    response.send(JSON.stringify(trip));
+    setTimeout(function(){
+        console.log("trip before: " +JSON.stringify(trip));
+        allData.push(trip);
+        console.log("array: " + JSON.stringify(allData[allData.length-1]));
+        trip = {};
+        console.log("trip after: " +JSON.stringify(trip));
+        response.send(JSON.stringify(allData[allData.length-1]));
+    }, 4000);
 });
 
 
