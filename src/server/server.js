@@ -40,12 +40,17 @@ app.get('/', function (request, res) {
 });
 
 /* POST METHOD */
+app.post('/requestData', async (request, response) => {
+    response.send(JSON.stringify(trip));
+});
+
 app.post('/userInput', async (request, response) => {
     trip.city = request.body.city;
     trip.date = request.body.departDate;
     trip.timeZoneOffset = request.body.timeZoneOffset;
 
-    getDataFromGeoNames(request.body.city);
+    const temp = await getDataFromGeoNames(request.body.city);
+    response.send(JSON.stringify(trip));
 });
 
 
@@ -55,6 +60,7 @@ async function getDataFromGeoNames(city) {
         .then(function (response) {
             trip.lng = response.data.geonames[0].lng;
             trip.lat = response.data.geonames[0].lat;
+            trip.country = response.data.geonames[0].countryName;
 
             getWeather(trip.lng, trip.lat);
         })
@@ -77,27 +83,15 @@ async function getWeather(lng, lat) {
 
     
     var url;
-    if(diff < 0) {
-        //this gets an error
-        //past weather (history)
-        url = `https://api.weatherbit.io/v2.0/history/energy?lat=${lat}&lon=${lng}&start_date=${endDate}&end_date=${todayDate}&key=${process.env.weatherbitAPIkey}&tp=daily`
-    } else if(diff === 0) {
-        //within a week
-        url = `https://api.weatherbit.io/v2.0/current?&lat=${lat}&lon=${lng}&key=${process.env.weatherbitAPIkey}`;
-    } else {
-        //further
-        url = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${lng}&key=${process.env.weatherbitAPIkey}`;
-    }
+    url = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${lat}&lon=${lng}&key=${process.env.weatherbitAPIkey}`;
 
     axios.get(url)
         .then(function (response) {
-            console.log(response.data.data[0].temp);
-            console.log("difff " + diff);
-            console.log(url);
 
-            data[0].temp
             if(diff < 0) {
-                // trip.pastTemp = response.data.data[0].temp;
+                trip.weatherDescription = response.data.data[0].weather.description;
+                trip.lowTemp = response.data.data[0].low_temp;
+                trip.maxTemp = response.data.data[0].max_temp;
             } else if(diff < 17){
                 trip.weatherDescription = response.data.data[diff].weather.description;
                 trip.lowTemp = response.data.data[diff].low_temp;
@@ -108,10 +102,31 @@ async function getWeather(lng, lat) {
                 trip.maxTemp = response.data.data[15].max_temp;
             }
 
-            console.log(JSON.stringify(trip));
+             getPhoto();
         })
         .catch(function (error) {
             // handle error
             console.log("ERROR in getWeather!!  " + error);
+        })
+}
+
+async function getPhoto() {
+
+    url = `https://pixabay.com/api/?image_type=photo&key=${process.env.pixabayAPI}&q=${trip.city}`
+    axios.get(url)
+        .then(function (response) {
+
+            if (response.data.totalHits < 1) {
+                trip.imageUrl = 'https://cdn.pixabay.com/photo/2016/11/18/22/14/adventure-1837134_1280.jpg';
+            } else {
+                var random = Math.floor(Math.random() * 10) + 1;
+                trip.imageUrl = response.data.hits[random].webformatURL;
+                console.log(JSON.stringify(trip));
+            }
+
+        })
+        .catch(function (error) {
+            // handle error
+            console.log("ERROR in getPhoto!!: " + error);
         })
 }

@@ -1,0 +1,63 @@
+// function closeModal(){
+//     const modal = document.getElementById('myModal');
+//     modal.style.display = "none";
+// }
+
+async function openModal(data) {
+    console.log("adfaGS");
+
+    const xBtn = document.getElementById('modal_close');
+    xBtn.addEventListener('click', function (){
+        const modal = document.getElementById('myModal');
+        modal.style.display = "none";
+    });
+
+    const modal = document.getElementById('myModal');
+    modal.style.display = "block";
+
+    const modalImg = document.getElementById('modal_img')
+    modalImg.setAttribute('src', data.imageUrl);
+
+    const modalTitle = document.getElementById('modal_title');
+    modalTitle.innerHTML = '<stong>Trip to : </stong>' + data.city;
+
+
+    const modalText = document.getElementById('modal_text');
+
+    const modalP0 = document.createElement('p');
+    modalP0.setAttribute('class', 'modal_p');
+    modalP0.innerHTML = 'Your trip to <strong><em> ' + data.city + ', ' + data.country + '</em></strong> is ' + data.diff + ' days away';
+
+    const modalP1 = document.createElement('p');
+    modalP1.setAttribute('class', 'modal_p');
+    modalP1.innerHTML = '<strong>Departure Date: </strong>' + data.date;
+
+    const modalP2 = document.createElement('p');
+    modalP2.setAttribute('class', 'modal_p');
+    modalP2.innerHTML = '<strong>Low Temp: </strong>' + data.lowTemp + ' °C';
+
+    const modalP3 = document.createElement('p');
+    modalP3.setAttribute('class', 'modal_p');
+    modalP3.innerHTML = '<strong>High Temp: </strong>' + data.maxTemp + ' °C';
+
+    const modalP4 = document.createElement('p');
+    modalP4.setAttribute('class', 'modal_p');
+    modalP4.innerHTML = '<strong>Weather Description: </strong>' + data.weatherDescription;
+
+    modalText.appendChild(modalP0);
+    modalText.appendChild(modalP1);
+    modalText.appendChild(modalP2);
+    modalText.appendChild(modalP3);
+    modalText.appendChild(modalP4);
+
+    const submitBtn = document.getElementById('search_btn');
+    submitBtn.setAttribute('value', 'Search');
+    submitBtn.disabled = false;
+
+    const saveBtn = document.getElementById('save_trip_btn');
+    saveBtn.addEventListener('click', function (){
+        Client.updateUI(data);
+    });
+}
+
+export { openModal } 

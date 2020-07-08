@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Kalam&family=Lobster&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
             rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
 
         <!-- Font Awesome - icons -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
@@ -65,33 +66,35 @@
                     <input id="search_btn" type="submit" value="Search">
                 </form>
             </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <div class="modal_content">
+                    <span id="modal_close">&times;</span>
+
+                    <div id="modal_card">
+                        <img id="modal_img" src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
+                        <div id="modal_text">
+                            <h3 id="modal_title"> Agni</h3>
+                            <hr>
+                        </div>
+
+                    </div>
+                    <button id="save_trip_btn"> Save Trip</button>
+
+                </div>
+
+            </div>
+
         </section>
 
         <section id="my_trips">
             <h1>My trips</h1>
             <div id="all_trip_cards" class="container">
                 <div class="row">
-                    <div class="col-lg col-md-12 col-lg-6 ">
-                        <div class="card">
-                            <img src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
-                            <h3> Agni</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="delete_trip_btn"> Delete Trip</button>
-                        </div>
-                    </div>
 
-
-                    <div class="col-lg col-md-12 col-lg-6 ">
-                        <div class="card">
-                            <img src="//placehold.it/100?text=Agni.jpg" alt="Card image cap" />
-                            <h3> BOOM</h3>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <button class="delete_trip_btn"> Delete Trip</button>
-                        </div>
-                    </div>
-
+                        <div class="afterRow col-lg col-md-12 col-lg-6"><div class="card"><img src="https://pixabay.com/get/55e2d7404952ae14f1dc84609629307d1236dde0524c704c7c2b79d6954dc751_640.jpg" alt="City photo"><h3><stong>Trip to : </stong>Cairo</h3><p class="card-text">Your trip to <strong><em> Cairo, Egypt</em></strong> is 16 days away</p><p class="card-text"><strong>Departure Date: </strong>2020-08-09</p><p class="card-text"><strong>Low Temp: </strong>25.4 °C</p><p class="card-text"><strong>High Temp: </strong>40.3 °C</p><p class="card-text"><strong>Weather Description: </strong>Clear Sky</p><button class="delete_trip_btn">Delete Trip</button></div></div>
 
                 </div>
             </div>

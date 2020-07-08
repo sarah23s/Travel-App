@@ -24,7 +24,7 @@ function handleSubmit(event) {
         timeZoneOffset: offset,
     };
 
-    Client.checkForInfo(data)
+    Client.checkForInfo(data);
 
     console.log("::: Form Submitted :::");
 }

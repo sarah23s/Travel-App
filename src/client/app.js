@@ -1,26 +1,25 @@
 import { checkForInfo } from './js/infoChecker'
 import { handleSubmit } from './js/formHandler'
+import { openModal } from './js/openModal'
+import { updateUI } from './js/updateUI'
 
 import './styles/main.scss'
 import './styles/footer.scss'
 import './styles/header.scss'
+import './styles/modal.scss'
 
 import plannerImg from './images/planner.jpg'
 import cloudsImg from './images/clouds.jpeg'
-
+import { stringify } from 'querystring'
 
 
 async function performSearch() {
-    // console.log("IN SEARCHHHH");
     const submitBtn = document.getElementById('search_btn');
-
-    submitBtn.textContent = 'Searching...';
+    submitBtn.setAttribute('value', 'Searching...' );
     submitBtn.disabled = true;
 
-    handleSubmit(event);
+    Client.handleSubmit(event);
 
-    submitBtn.textContent = 'Search';
-    submitBtn.disabled = false;
 }
 
 function performDelete(target) {
@@ -43,12 +42,6 @@ function performActiveNavItem(target) {
     target.classList.add('active_nav');
 }
 
-function performSave() {
-    console.log("IN SAVEEEE");
-}
-
-
-
 
 document.addEventListener('click', function (e) {
     if (e.target.className === 'delete_trip_btn') {
@@ -65,16 +58,46 @@ document.addEventListener('click', function (e) {
     else if (e.target.id === 'search_btn') {
         performSearch();
     }
-    else if (e.target.id === 'save_btn') {
-        performSave();
-    }
 })
+
+
+//need to be edited
+window.addEventListener('scroll', function () {
+    // let fromTop = window.scrollY;
+    let position = window.pageYOffset;
+
+    const allLinks = document.querySelectorAll('.nav-link');
+    console.log("allLinks: " + allLinks.length);
+
+
+    allLinks.forEach((link) => {
+        var sectionId = link.hash;
+        sectionId = sectionId.substring(1);
+        console.log("sectionId: " + sectionId);
+
+        const sections = document.getElementById(sectionId);
+        console.log("sctionss: "+ stringify(sections));
+
+
+        // did not reach to any yet
+        if (!sections) {
+            return;
+        }
+
+        // Add active class
+        if (sections.offsetTop <= position + 100) {
+            performActiveNavItem(sections);
+        }
+    
+    });
+});
+
 
 
 
 export {
     handleSubmit,
     checkForInfo,
-
-    // updateUI
+    openModal,
+    updateUI
 }
