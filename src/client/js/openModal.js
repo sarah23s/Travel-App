@@ -11,7 +11,14 @@ async function openModal(data) {
     modal.style.display = "block";
 
     const modalImg = document.getElementById('modal_img')
-    modalImg.setAttribute('src', data.imageUrl);
+    if (!modalImg.src || !modalImg.src.length || modalImg.src.length === 0 || modalImg.src === null || modalImg.src === undefined ) {
+        modalImg.setAttribute('src','https://cdn.pixabay.com/photo/2016/11/18/22/14/adventure-1837134_1280.jpg');
+    } else {
+        modalImg.setAttribute('src', data.imageUrl);
+    }
+
+
+   
 
     const modalTitle = document.getElementById('modal_title');
     modalTitle.innerHTML = '<stong>Trip to : </stong>' + data.city;
