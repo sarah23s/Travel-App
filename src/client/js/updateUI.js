@@ -1,6 +1,7 @@
 async function updateUI(data) {
     console.log("data in update UI: " + JSON.stringify(data));
 
+
     const modal = document.getElementById('myModal');
     modal.style.display = "none";
 

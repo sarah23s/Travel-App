@@ -29,12 +29,12 @@ function handleSubmit(event) {
     console.log("::: Form Submitted :::");
 }
 
-async function sentiment_analysis_TEST(input_text) {
-    var response = await fetch("http://localhost:2304/sentiment_text");
+async function TEST(input_text) {
+    var response = await fetch("http://localhost:2304/text");
     console.log("response: ", response);
 }
 
 export {
     handleSubmit,
-    sentiment_analysis_TEST
+    TEST
 }

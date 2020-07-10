@@ -1,4 +1,5 @@
-import { checkForInfo } from './client/js/infoChecker'
+import { checkForInfo } from '../client/js/infoChecker'
+
 
 describe("Checking updateUI function is called", () => {
     test('testing update ui is a function or not', () => {

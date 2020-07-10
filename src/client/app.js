@@ -1,6 +1,6 @@
 import { checkForInfo } from './js/infoChecker'
 import { handleSubmit } from './js/formHandler'
-import { sentiment_analysis_TEST } from './js/formHandler'
+import { TEST } from './js/formHandler'
 import { openModal } from './js/openModal'
 import { updateUI } from './js/updateUI'
 
@@ -23,7 +23,6 @@ async function performSearch() {
 }
 
 function performDelete(target) {
-    // console.log("IN DELEETTEEEE");
     let confirmation = confirm("Do you really want to delete this trip?")
     if (confirmation) {
         const deleteDiv = target.parentElement.parentElement;
@@ -32,9 +31,6 @@ function performDelete(target) {
 }
 
 async function performSave() {
-    // const saveBtn = document.getElementById('save_trip_btn');
-    // saveBtn.addEventListener('click', function (){
-
     try {
         const postData = await fetch('/getLastData', {
             method: 'POST',
@@ -46,13 +42,9 @@ async function performSave() {
         });
 
         const myData = await postData.json();
-        console.log("DATA IN APP for save: " + (myData));
         Client.updateUI(myData);
 
-        var allModalP = document.getElementsByClassName('modal_p');
-        while (allModalP[0]) {
-            allModalP[0].parentNode.removeChild(allModalP[0]);
-        }
+        saveClose();
 
     } catch (error) {
         console.log("HELLOOOOO THIS IS AN ERROR in infoChecker");
@@ -65,10 +57,7 @@ function performClose() {
     const modal = document.getElementById('myModal');
     modal.style.display = "none";
 
-    var allModalP = document.getElementsByClassName('modal_p');
-    while (allModalP[0]) {
-        allModalP[0].parentNode.removeChild(allModalP[0]);
-    }
+    saveClose();
 }
 
 
@@ -81,6 +70,21 @@ function performActiveNavItem(target) {
     }
 
     target.classList.add('active_nav');
+}
+
+function saveClose(){
+    var allModalP = document.getElementsByClassName('modal_p');
+    while (allModalP[0]) {
+        allModalP[0].parentNode.removeChild(allModalP[0]);
+    }
+
+    var cards = document.getElementsByClassName('card');
+    for(let i = 0 ; i<cards.length; i++){
+        cards[i].style.zIndex = "2";
+    }
+
+    var h1 = document.getElementById('my_trips_title');
+    h1.style.display = 'block';
 }
 
 
@@ -140,7 +144,7 @@ window.addEventListener('scroll', function () {
 
 export {
     handleSubmit,
-    sentiment_analysis_TEST,
+    TEST,
     checkForInfo,
     openModal,
     updateUI

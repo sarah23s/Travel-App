@@ -141,6 +141,14 @@ async function getPhoto() {
 }
 
 //test
-app.get('/sentiment_text', async function (req, res) {
+app.get('/text', async function (req, res) {
     res.send({});
 });
+
+app.get("/test", function(req, res) {
+    res.json({
+        status: 200,
+    });
+});
+
+module.exports = server;

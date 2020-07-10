@@ -7,6 +7,16 @@ async function openModal(data) {
     console.log("adfaGS");
     console.log(data);
 
+
+    var cards = document.getElementsByClassName('card');
+    for(let i = 0 ; i<cards.length; i++){
+        cards[i].style.zIndex = "-1";
+    }
+
+    var h1 = document.getElementById('my_trips_title');
+    h1.style.display = 'none';
+
+
     const modal = document.getElementById('myModal');
     modal.style.display = "block";
 
@@ -17,9 +27,7 @@ async function openModal(data) {
         modalImg.setAttribute('src', data.imageUrl);
     }
 
-
-   
-
+    
     const modalTitle = document.getElementById('modal_title');
     modalTitle.innerHTML = '<stong>Trip to : </stong>' + data.city;
 
